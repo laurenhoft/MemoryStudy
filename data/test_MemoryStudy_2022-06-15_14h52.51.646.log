@@ -1,0 +1,15 @@
+2.6484 	WARNING 	We strongly recommend you activate the PTB sound engine in PsychoPy prefs as the preferred audio engine. Its timing is vastly superior. Your prefs are currently set to use ['sounddevice', 'PTB', 'pyo', 'pygame'] (in that order).
+12.2244 	WARNING 	User requested fullscreen with size [1024  768], but screen is actually [1366, 768]. Using actual size
+15.2134 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, autoLog=True, backendConf=UNKNOWN, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x000001619BD3AA30>, gamma=None, gammaErrorPolicy='raise', lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x000001619C9BDC70>, multiSample=False, name='window1', numSamples=2, pos=(0, 0), screen=0, size=array([1366,  768]), stencilBits=0, stereo=False, units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+15.2143 	EXP 	window1: mouseVisible = True
+15.2143 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+15.2144 	EXP 	window1: recordFrameIntervals = False
+15.3788 	EXP 	window1: recordFrameIntervals = True
+15.5620 	EXP 	Screen (0) actual frame rate measured at 60.08Hz
+15.5620 	EXP 	window1: recordFrameIntervals = False
+19.9885 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05000000000000001, italic=False, languageStyle='LTR', name='text', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Memory test instructions', units='height', win=Window(...), wrapWidth=1)
+20.1112 	EXP 	text: autoDraw = True
+21.1159 	EXP 	text: autoDraw = False
+50.6136 	DATA 	Keypress: space
+50.6279 	EXP 	text: autoDraw = False
+50.8207 	EXP 	window1: mouseVisible = True
