@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2022.1.4),
-    on June 16, 2022, at 11:28
+    on June 16, 2022, at 16:52
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -52,7 +52,7 @@ filename = _thisDir + os.sep + u'data/%s_%s_%s' % (expInfo['participant'], expNa
 # An ExperimentHandler isn't essential but helps with data saving
 thisExp = data.ExperimentHandler(name=expName, version='',
     extraInfo=expInfo, runtimeInfo=None,
-    originPath='C:\\Users\\User\\OneDrive\\Documents\\GitHub\\MemoryExperiment\\MemoryStudy_lastrun.py',
+    originPath='C:\\Users\\Psychology\\Documents\\ABExperiment\\MemoryStudy\\MemoryStudy_lastrun.py',
     savePickle=True, saveWideText=True,
     dataFileName=filename)
 # save a log file for detail verbose info
@@ -171,7 +171,7 @@ while continueRoutine:
         text.setAutoDraw(True)
     if text.status == STARTED:
         # is it time to stop? (based on global clock, using actual start)
-        if tThisFlipGlobal > text.tStartRefresh + 1.0-frameTolerance:
+        if tThisFlipGlobal > text.tStartRefresh + 10000-frameTolerance:
             # keep track of stop time/frame for later
             text.tStop = t  # not accounting for scr refresh
             text.frameNStop = frameN  # exact frame index
@@ -236,7 +236,7 @@ thisExp.nextEntry()
 routineTimer.reset()
 
 # set up handler to look after randomisation of conditions etc
-trials = data.TrialHandler(nReps=1.0, method='random', 
+trials = data.TrialHandler(nReps=1.0, method='sequential', 
     extraInfo=expInfo, originPath=-1,
     trialList=data.importConditions('Memory_conditionSheet.xlsx'),
     seed=None, name='trials')
@@ -289,10 +289,11 @@ for thisTrial in trials:
         # update/draw components on each frame
         t = trialClock.getTime()
         
-        curImage = "resources\\JPG\\" + Picture
-        imageCount = 1
+        Mem_curImage = "resources\\JPG" + Picture
+        imageCount = imageCount + 1
         Mem_curImage = Mem_curImage + ".jpg"
         
+        #C:\Users\Psychology\Documents\ABExperiment\MemoryStudy\resources\JPG
         
         # *MemTest* updates
         if MemTest.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
@@ -325,7 +326,7 @@ for thisTrial in trials:
             win.callOnFlip(MemResponse.clock.reset)  # t=0 on next screen flip
             win.callOnFlip(MemResponse.clearEvents, eventType='keyboard')  # clear events on next screen flip
         if MemResponse.status == STARTED and not waitOnFlip:
-            theseKeys = MemResponse.getKeys(keyList=['0''1''2''3''4''5''6'], waitRelease=False)
+            theseKeys = MemResponse.getKeys(keyList=['1''2''3''4''5''6''7'], waitRelease=False)
             _MemResponse_allKeys.extend(theseKeys)
             if len(_MemResponse_allKeys):
                 MemResponse.keys = _MemResponse_allKeys[-1].name  # just the last key pressed
