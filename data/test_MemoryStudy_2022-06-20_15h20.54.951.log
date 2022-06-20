@@ -1,0 +1,38 @@
+1.9611 	WARNING 	We strongly recommend you activate the PTB sound engine in PsychoPy prefs as the preferred audio engine. Its timing is vastly superior. Your prefs are currently set to use ['sounddevice', 'PTB', 'pyo', 'pygame'] (in that order).
+6.8071 	WARNING 	User requested fullscreen with size [1024  768], but screen is actually [1920, 1080]. Using actual size
+7.5878 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, autoLog=True, backendConf=UNKNOWN, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x000001B8DB2B1A00>, gamma=None, gammaErrorPolicy='raise', lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x000001B8DBF3E400>, multiSample=False, name='window1', numSamples=2, pos=(0, 0), screen=0, size=array([1920, 1080]), stencilBits=0, stereo=False, units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+7.5881 	EXP 	window1: mouseVisible = True
+7.5881 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+7.5882 	EXP 	window1: recordFrameIntervals = False
+7.7544 	EXP 	window1: recordFrameIntervals = True
+7.9393 	EXP 	Screen (0) actual frame rate measured at 59.72Hz
+7.9393 	EXP 	window1: recordFrameIntervals = False
+9.9757 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Memory test instructions', units='height', win=Window(...), wrapWidth=1)
+9.9877 	EXP 	Created MemTest = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='MemTest', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Did you see this image?', units='height', win=Window(...), wrapWidth=1)
+9.9925 	EXP 	Created Display = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Display', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128.0, units='height', win=Window(...))
+10.0032 	EXP 	text: autoDraw = True
+10.6483 	EXP 	Imported Memory_conditionSheet.xlsx as conditions, 565 conditions, 10 params
+10.6578 	EXP 	Created sequence: sequential, trialTypes=565, nReps=1, seed=None
+10.6581 	EXP 	New trial (rep=0, index=0): {'TrialType': 'Mem', 'Lag': 1, 'Image': 'giraffe.jpg', 'T1PA': 'P', 'T2PA': 'P', 'PicFolder': 'JPG\\', 'Picture': 'giraffe', 'FullPathName': 'C:\\\\Users\\\\Psychology\\\\Documents\\\\ABExperiment\\\\MemoryStudy\\\\resources\\\\JPG\\\\giraffe.jpg', 'FilePath': 'C:\\\\Users\\\\Psychology\\\\Documents\\\\ABExperiment\\\\MemoryStudy\\\\resources\\\\JPG\\\\'}
+10.6644 	DATA 	Keypress: space
+10.6717 	EXP 	text: autoDraw = False
+10.6717 	EXP 	Display: image = 'C:\\\\Users\\\\Psychology\\\\Documents\\\\ABExperiment\\\\MemoryStudy\\\\resources\\\\JPG\\\\giraffe.jpg'
+10.6717 	EXP 	MemTest: autoDraw = True
+10.6717 	EXP 	Display: autoDraw = True
+12.0284 	DATA 	Keypress: 2
+16.3703 	DATA 	Keypress: 3
+18.5171 	DATA 	Keypress: 1
+20.2685 	DATA 	Keypress: 1
+20.6183 	DATA 	Keypress: 2
+21.0033 	DATA 	Keypress: 3
+21.3391 	DATA 	Keypress: 4
+21.6051 	DATA 	Keypress: 5
+21.8200 	DATA 	Keypress: 6
+22.0539 	DATA 	Keypress: 7
+24.6580 	DATA 	Mouse: Left button down, pos=(1393,613)
+24.7246 	DATA 	Mouse:  Left button up, pos=(1390,622)
+25.4565 	DATA 	Keypress: space
+26.1903 	DATA 	Keypress: left
+26.3755 	DATA 	Keypress: right
+27.0788 	DATA 	Keypress: escape
+28.0205 	EXP 	window1: mouseVisible = True

@@ -110,7 +110,7 @@
     </Routine>
     <Routine name="MemoryTest">
       <VariableComponent name="Mem_curImage">
-        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="True" valType="bool" updates="None" name="disabled"/>
         <Param val="" valType="code" updates="None" name="durationEstim"/>
         <Param val="Mem_curImage" valType="code" updates="None" name="name"/>
         <Param val="False" valType="bool" updates="constant" name="saveEndExp"/>
@@ -137,13 +137,13 @@
         <Param val="t = 0;&amp;#10;trialClock.reset();&amp;#10;imageCount = 0;&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
         <Param val="t = 0&amp;#10;trialClock.reset()&amp;#10;imageCount = 0" valType="extendedCode" updates="constant" name="Begin Routine"/>
         <Param val="Py" valType="str" updates="None" name="Code Type"/>
-        <Param val="t = trialClock.getTime()&amp;#10;&amp;#10;Mem_curImage = &quot;C:\\Users\\Psychology\\Documents\\ABExperiment\\MemoryStudy\\resources\\JPG\\&quot; + Image&amp;#10;&amp;#10;imageCount = imageCount + 1&amp;#10;&amp;#10;&amp;#10;#C:\Users\Psychology\Documents\ABExperiment\MemoryStudy\resources\JPG" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="t = trialClock.getTime()&amp;#10;&amp;#10;Mem_curImage = &quot;This is a test&quot;&amp;#10;#&quot;C:\\Users\\Psychology\\Documents\\ABExperiment\\MemoryStudy\\resources\\JPG\\&quot; + Image&amp;#10;&amp;#10;imageCount = imageCount + 1&amp;#10;&amp;#10;&amp;#10;#C:\Users\Psychology\Documents\ABExperiment\MemoryStudy\resources\JPG" valType="extendedCode" updates="constant" name="Each Frame"/>
         <Param val="t = trialClock.getTime();&amp;#10;curImage = (&quot;resources\\JPG\\&quot; + Picture);&amp;#10;imageCount = 1;&amp;#10;Mem_curImage = (Mem_curImage + &quot;.jpg&quot;);&amp;#10;" valType="extendedCode" updates="constant" name="Each JS Frame"/>
         <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="End JS Routine"/>
         <Param val="" valType="extendedCode" updates="constant" name="End Routine"/>
-        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="True" valType="bool" updates="None" name="disabled"/>
         <Param val="Mem_Code" valType="code" updates="None" name="name"/>
       </CodeComponent>
       <TextComponent name="MemTest">
@@ -172,7 +172,7 @@
         <Param val="" valType="num" updates="constant" name="wrapWidth"/>
       </TextComponent>
       <KeyboardComponent name="MemResponse">
-        <Param val="'1''2''3''4''5''6''7'" valType="list" updates="constant" name="allowedKeys"/>
+        <Param val="'1','2','3','4','5','6'" valType="list" updates="constant" name="allowedKeys"/>
         <Param val="" valType="str" updates="constant" name="correctAns"/>
         <Param val="False" valType="bool" updates="None" name="disabled"/>
         <Param val="True" valType="bool" updates="constant" name="discard previous"/>
@@ -198,7 +198,7 @@
         <Param val="" valType="code" updates="None" name="durationEstim"/>
         <Param val="False" valType="bool" updates="constant" name="flipHoriz"/>
         <Param val="False" valType="bool" updates="constant" name="flipVert"/>
-        <Param val="$Mem_curImage" valType="file" updates="set every repeat" name="image"/>
+        <Param val="$FullPathName" valType="file" updates="set every repeat" name="image"/>
         <Param val="linear" valType="str" updates="constant" name="interpolate"/>
         <Param val="" valType="str" updates="constant" name="mask"/>
         <Param val="Display" valType="code" updates="None" name="name"/>
@@ -226,7 +226,7 @@
       <Param name="conditionsFile" updates="None" val="Memory_conditionSheet.xlsx" valType="file"/>
       <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
       <Param name="isTrials" updates="None" val="True" valType="bool"/>
-      <Param name="loopType" updates="None" val="random" valType="str"/>
+      <Param name="loopType" updates="None" val="sequential" valType="str"/>
       <Param name="nReps" updates="None" val="1" valType="num"/>
       <Param name="name" updates="None" val="trials" valType="code"/>
       <Param name="random seed" updates="None" val="" valType="code"/>

@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2022.1.4),
-    on June 20, 2022, at 11:51
+    on June 20, 2022, at 15:22
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -105,18 +105,13 @@ End_Instructions = keyboard.Keyboard()
 
 # Initialize components for Routine "MemoryTest"
 MemoryTestClock = core.Clock()
-# Set experiment start values for variable component Mem_curImage
-Mem_curImage = ''
-Mem_curImageContainer = []
-trialClock = core.Clock()
-from os.path import exists 
 MemTest = visual.TextStim(win=win, name='MemTest',
     text='Did you see this image?',
     font='Open Sans',
     pos=(0, 0), height=0.05, wrapWidth=None, ori=0.0, 
     color='white', colorSpace='rgb', opacity=None, 
     languageStyle='LTR',
-    depth=-2.0);
+    depth=0.0);
 MemResponse = keyboard.Keyboard()
 Display = visual.ImageStim(
     win=win,
@@ -125,7 +120,7 @@ Display = visual.ImageStim(
     ori=0.0, pos=(0, 0), size=(0.5, 0.5),
     color=[1,1,1], colorSpace='rgb', opacity=None,
     flipHoriz=False, flipVert=False,
-    texRes=128.0, interpolate=True, depth=-4.0)
+    texRes=128.0, interpolate=True, depth=-2.0)
 
 # Create some handy timers
 globalClock = core.Clock()  # to track the time since experiment started
@@ -236,7 +231,7 @@ thisExp.nextEntry()
 routineTimer.reset()
 
 # set up handler to look after randomisation of conditions etc
-trials = data.TrialHandler(nReps=1.0, method='random', 
+trials = data.TrialHandler(nReps=1.0, method='sequential', 
     extraInfo=expInfo, originPath=-1,
     trialList=data.importConditions('Memory_conditionSheet.xlsx'),
     seed=None, name='trials')
@@ -257,13 +252,10 @@ for thisTrial in trials:
     # ------Prepare to start Routine "MemoryTest"-------
     continueRoutine = True
     # update component parameters for each repeat
-    t = 0
-    trialClock.reset()
-    imageCount = 0
     MemResponse.keys = []
     MemResponse.rt = []
     _MemResponse_allKeys = []
-    Display.setImage(Mem_curImage)
+    Display.setImage(FullPathName)
     # keep track of which components have finished
     MemoryTestComponents = [MemTest, MemResponse, Display]
     for thisComponent in MemoryTestComponents:
@@ -287,14 +279,6 @@ for thisTrial in trials:
         tThisFlipGlobal = win.getFutureFlipTime(clock=None)
         frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
         # update/draw components on each frame
-        t = trialClock.getTime()
-        
-        Mem_curImage = "C:\\Users\\Psychology\\Documents\\ABExperiment\\MemoryStudy\\resources\\JPG\\" + Image
-        
-        imageCount = imageCount + 1
-        
-        
-        #C:\Users\Psychology\Documents\ABExperiment\MemoryStudy\resources\JPG
         
         # *MemTest* updates
         if MemTest.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
@@ -327,7 +311,7 @@ for thisTrial in trials:
             win.callOnFlip(MemResponse.clock.reset)  # t=0 on next screen flip
             win.callOnFlip(MemResponse.clearEvents, eventType='keyboard')  # clear events on next screen flip
         if MemResponse.status == STARTED and not waitOnFlip:
-            theseKeys = MemResponse.getKeys(keyList=['1''2''3''4''5''6''7'], waitRelease=False)
+            theseKeys = MemResponse.getKeys(keyList=['1','2','3','4','5','6','7'], waitRelease=False)
             _MemResponse_allKeys.extend(theseKeys)
             if len(_MemResponse_allKeys):
                 MemResponse.keys = _MemResponse_allKeys[-1].name  # just the last key pressed
