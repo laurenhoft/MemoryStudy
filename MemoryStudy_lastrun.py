@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2022.1.4),
-    on June 16, 2022, at 16:52
+    on June 20, 2022, at 11:51
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -109,7 +109,7 @@ MemoryTestClock = core.Clock()
 Mem_curImage = ''
 Mem_curImageContainer = []
 trialClock = core.Clock()
-
+from os.path import exists 
 MemTest = visual.TextStim(win=win, name='MemTest',
     text='Did you see this image?',
     font='Open Sans',
@@ -118,9 +118,9 @@ MemTest = visual.TextStim(win=win, name='MemTest',
     languageStyle='LTR',
     depth=-2.0);
 MemResponse = keyboard.Keyboard()
-image = visual.ImageStim(
+Display = visual.ImageStim(
     win=win,
-    name='image', 
+    name='Display', 
     image='sin', mask=None, anchor='center',
     ori=0.0, pos=(0, 0), size=(0.5, 0.5),
     color=[1,1,1], colorSpace='rgb', opacity=None,
@@ -236,7 +236,7 @@ thisExp.nextEntry()
 routineTimer.reset()
 
 # set up handler to look after randomisation of conditions etc
-trials = data.TrialHandler(nReps=1.0, method='sequential', 
+trials = data.TrialHandler(nReps=1.0, method='random', 
     extraInfo=expInfo, originPath=-1,
     trialList=data.importConditions('Memory_conditionSheet.xlsx'),
     seed=None, name='trials')
@@ -263,9 +263,9 @@ for thisTrial in trials:
     MemResponse.keys = []
     MemResponse.rt = []
     _MemResponse_allKeys = []
-    image.setImage(Mem_curImage)
+    Display.setImage(Mem_curImage)
     # keep track of which components have finished
-    MemoryTestComponents = [MemTest, MemResponse, image]
+    MemoryTestComponents = [MemTest, MemResponse, Display]
     for thisComponent in MemoryTestComponents:
         thisComponent.tStart = None
         thisComponent.tStop = None
@@ -289,9 +289,10 @@ for thisTrial in trials:
         # update/draw components on each frame
         t = trialClock.getTime()
         
-        Mem_curImage = "resources\\JPG" + Picture
+        Mem_curImage = "C:\\Users\\Psychology\\Documents\\ABExperiment\\MemoryStudy\\resources\\JPG\\" + Image
+        
         imageCount = imageCount + 1
-        Mem_curImage = Mem_curImage + ".jpg"
+        
         
         #C:\Users\Psychology\Documents\ABExperiment\MemoryStudy\resources\JPG
         
@@ -334,22 +335,22 @@ for thisTrial in trials:
                 # a response ends the routine
                 continueRoutine = False
         
-        # *image* updates
-        if image.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # *Display* updates
+        if Display.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
             # keep track of start time/frame for later
-            image.frameNStart = frameN  # exact frame index
-            image.tStart = t  # local t and not account for scr refresh
-            image.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(image, 'tStartRefresh')  # time at next scr refresh
-            image.setAutoDraw(True)
-        if image.status == STARTED:
+            Display.frameNStart = frameN  # exact frame index
+            Display.tStart = t  # local t and not account for scr refresh
+            Display.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(Display, 'tStartRefresh')  # time at next scr refresh
+            Display.setAutoDraw(True)
+        if Display.status == STARTED:
             # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > image.tStartRefresh + 10000-frameTolerance:
+            if tThisFlipGlobal > Display.tStartRefresh + 10000-frameTolerance:
                 # keep track of stop time/frame for later
-                image.tStop = t  # not accounting for scr refresh
-                image.frameNStop = frameN  # exact frame index
-                win.timeOnFlip(image, 'tStopRefresh')  # time at next scr refresh
-                image.setAutoDraw(False)
+                Display.tStop = t  # not accounting for scr refresh
+                Display.frameNStop = frameN  # exact frame index
+                win.timeOnFlip(Display, 'tStopRefresh')  # time at next scr refresh
+                Display.setAutoDraw(False)
         
         # check for quit (typically the Esc key)
         if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
@@ -382,8 +383,8 @@ for thisTrial in trials:
         trials.addData('MemResponse.rt', MemResponse.rt)
     trials.addData('MemResponse.started', MemResponse.tStartRefresh)
     trials.addData('MemResponse.stopped', MemResponse.tStopRefresh)
-    trials.addData('image.started', image.tStartRefresh)
-    trials.addData('image.stopped', image.tStopRefresh)
+    trials.addData('Display.started', Display.tStartRefresh)
+    trials.addData('Display.stopped', Display.tStopRefresh)
     # the Routine "MemoryTest" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset()
     thisExp.nextEntry()
