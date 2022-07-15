@@ -1,0 +1,24 @@
+1.4299 	WARNING 	We strongly recommend you activate the PTB sound engine in PsychoPy prefs as the preferred audio engine. Its timing is vastly superior. Your prefs are currently set to use ['sounddevice', 'PTB', 'pyo', 'pygame'] (in that order).
+5.4939 	WARNING 	User requested fullscreen with size [1024  768], but screen is actually [1920, 1080]. Using actual size
+6.1351 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, autoLog=True, backendConf=UNKNOWN, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x000001E8C3581A00>, gamma=None, gammaErrorPolicy='raise', lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x000001E8C420E400>, multiSample=False, name='window1', numSamples=2, pos=(0, 0), screen=0, size=array([1920, 1080]), stencilBits=0, stereo=False, units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+6.1358 	EXP 	window1: mouseVisible = True
+6.1359 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+6.1360 	EXP 	window1: recordFrameIntervals = False
+6.3007 	EXP 	window1: recordFrameIntervals = True
+6.4851 	EXP 	Screen (0) actual frame rate measured at 59.80Hz
+6.4852 	EXP 	window1: recordFrameIntervals = False
+8.4146 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Memory test instructions', units='height', win=Window(...), wrapWidth=1)
+8.4232 	EXP 	Created MemTest = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='MemTest', opacity=1.0, ori=0.0, pos=array([ 0.  , -0.15]), rgb=UNKNOWN, text='Did you see this image?', units='height', win=Window(...), wrapWidth=1)
+8.4281 	EXP 	Created Display = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Display', opacity=1.0, ori=0.0, pos=array([0.  , 0.15]), size=array([0.5, 0.5]), texRes=128.0, units='height', win=Window(...))
+8.4378 	EXP 	text: autoDraw = True
+9.0642 	EXP 	Imported Memory_conditionSheet.xlsx as conditions, 565 conditions, 10 params
+9.0706 	EXP 	Created sequence: random, trialTypes=565, nReps=1, seed=None
+9.0709 	EXP 	New trial (rep=0, index=0): {'TrialType': 'Mem', 'Lag': 99, 'Image': 'mushroom01.jpg', 'T1PA': 'Z', 'T2PA': 'Z', 'PicFolder': 'JPG\\', 'Picture': 'mushroom01', 'FullPathName': 'C:\\\\Users\\\\Psychology\\\\Documents\\\\ABExperiment\\\\MemoryStudy\\\\resources\\\\JPG\\\\mushroom01.jpg', 'FilePath': 'C:\\\\Users\\\\Psychology\\\\Documents\\\\ABExperiment\\\\MemoryStudy\\\\resources\\\\JPG\\\\'}
+9.1879 	DATA 	Keypress: space
+9.2011 	EXP 	text: autoDraw = False
+9.2011 	EXP 	Display: image = 'C:\\\\Users\\\\Psychology\\\\Documents\\\\ABExperiment\\\\MemoryStudy\\\\resources\\\\JPG\\\\mushroom01.jpg'
+9.2011 	EXP 	MemTest: autoDraw = True
+9.2011 	EXP 	Display: autoDraw = True
+9.5711 	EXP 	New trial (rep=0, index=1): {'TrialType': 'Mem', 'Lag': 99, 'Image': 'cup05.jpg', 'T1PA': 'Z', 'T2PA': 'Z', 'PicFolder': 'JPG\\', 'Picture': 'cup05', 'FullPathName': 'C:\\\\Users\\\\Psychology\\\\Documents\\\\ABExperiment\\\\MemoryStudy\\\\resources\\\\JPG\\\\cup05.jpg', 'FilePath': 'C:\\\\Users\\\\Psychology\\\\Documents\\\\ABExperiment\\\\MemoryStudy\\\\resources\\\\JPG\\\\'}
+9.5722 	DEPRECATION 	Couldn't find image C:\\Users\\Psychology\\Documents\\ABExperiment\\MemoryStudy\\resources\\JPG\\cup05.jpg; check path? (tried: C:\Users\Psychology\Documents\ABExperiment\MemoryStudy\resources\JPG\cup05.jpg)
+9.6886 	EXP 	window1: mouseVisible = True

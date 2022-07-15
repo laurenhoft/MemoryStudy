@@ -1,0 +1,59 @@
+1.4479 	WARNING 	We strongly recommend you activate the PTB sound engine in PsychoPy prefs as the preferred audio engine. Its timing is vastly superior. Your prefs are currently set to use ['sounddevice', 'PTB', 'pyo', 'pygame'] (in that order).
+6.3663 	WARNING 	User requested fullscreen with size [1024  768], but screen is actually [1920, 1080]. Using actual size
+6.9923 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, autoLog=True, backendConf=UNKNOWN, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x000001E6575E1B20>, gamma=None, gammaErrorPolicy='raise', lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x000001E65826E520>, multiSample=False, name='window1', numSamples=2, pos=(0, 0), screen=0, size=array([1920, 1080]), stencilBits=0, stereo=False, units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+6.9927 	EXP 	window1: mouseVisible = True
+6.9927 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+6.9928 	EXP 	window1: recordFrameIntervals = False
+7.1597 	EXP 	window1: recordFrameIntervals = True
+7.3436 	EXP 	Screen (0) actual frame rate measured at 59.96Hz
+7.3437 	EXP 	window1: recordFrameIntervals = False
+9.2288 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Memory test instructions', units='height', win=Window(...), wrapWidth=1)
+9.2368 	EXP 	Created MemTest = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='MemTest', opacity=1.0, ori=0.0, pos=array([ 0.  , -0.15]), rgb=UNKNOWN, text='Did you see this image?', units='height', win=Window(...), wrapWidth=1)
+9.2417 	EXP 	Created Display = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Display', opacity=1.0, ori=0.0, pos=array([0.  , 0.15]), size=array([0.5, 0.5]), texRes=128.0, units='height', win=Window(...))
+9.2512 	EXP 	text: autoDraw = True
+12.1749 	EXP 	Imported Memory_conditionSheet.xlsx as conditions, 565 conditions, 10 params
+12.1815 	EXP 	Created sequence: random, trialTypes=565, nReps=1, seed=None
+12.1819 	EXP 	New trial (rep=0, index=0): {'TrialType': 'Mem', 'Lag': 99, 'Image': 'lionstatue.jpg', 'T1PA': 'Z', 'T2PA': 'Z', 'PicFolder': 'JPG\\', 'Picture': 'lionstatue', 'FullPathName': 'C:\\\\Users\\\\Psychology\\\\Documents\\\\ABExperiment\\\\MemoryStudy\\\\resources\\\\JPG\\\\lionstatue.jpg', 'FilePath': 'C:\\\\Users\\\\Psychology\\\\Documents\\\\ABExperiment\\\\MemoryStudy\\\\resources\\\\JPG\\\\'}
+12.3053 	DATA 	Keypress: space
+12.3178 	EXP 	text: autoDraw = False
+12.3178 	EXP 	Display: image = 'C:\\\\Users\\\\Psychology\\\\Documents\\\\ABExperiment\\\\MemoryStudy\\\\resources\\\\JPG\\\\lionstatue.jpg'
+12.3178 	EXP 	MemTest: autoDraw = True
+12.3178 	EXP 	Display: autoDraw = True
+14.1356 	DATA 	Keypress: 1
+14.1540 	EXP 	New trial (rep=0, index=1): {'TrialType': 'Mem', 'Lag': 1, 'Image': 'cannon.jpg', 'T1PA': 'P', 'T2PA': 'P', 'PicFolder': 'JPG\\', 'Picture': 'cannon', 'FullPathName': 'C:\\\\Users\\\\Psychology\\\\Documents\\\\ABExperiment\\\\MemoryStudy\\\\resources\\\\JPG\\\\cannon.jpg', 'FilePath': 'C:\\\\Users\\\\Psychology\\\\Documents\\\\ABExperiment\\\\MemoryStudy\\\\resources\\\\JPG\\\\'}
+14.2371 	EXP 	MemTest: autoDraw = False
+14.2371 	EXP 	Display: autoDraw = False
+14.2371 	EXP 	Display: image = 'C:\\\\Users\\\\Psychology\\\\Documents\\\\ABExperiment\\\\MemoryStudy\\\\resources\\\\JPG\\\\cannon.jpg'
+14.2371 	EXP 	MemTest: autoDraw = True
+14.2371 	EXP 	Display: autoDraw = True
+14.7341 	EXP 	New trial (rep=0, index=2): {'TrialType': 'Mem', 'Lag': 99, 'Image': 'cap03.jpg', 'T1PA': 'Z', 'T2PA': 'Z', 'PicFolder': 'JPG\\', 'Picture': 'cap03', 'FullPathName': 'C:\\\\Users\\\\Psychology\\\\Documents\\\\ABExperiment\\\\MemoryStudy\\\\resources\\\\JPG\\\\cap03.jpg', 'FilePath': 'C:\\\\Users\\\\Psychology\\\\Documents\\\\ABExperiment\\\\MemoryStudy\\\\resources\\\\JPG\\\\'}
+14.8163 	DATA 	Keypress: 1
+14.8260 	EXP 	MemTest: autoDraw = False
+14.8260 	EXP 	Display: autoDraw = False
+14.8260 	EXP 	Display: image = 'C:\\\\Users\\\\Psychology\\\\Documents\\\\ABExperiment\\\\MemoryStudy\\\\resources\\\\JPG\\\\cap03.jpg'
+14.8260 	EXP 	MemTest: autoDraw = True
+14.8260 	EXP 	Display: autoDraw = True
+15.4010 	EXP 	New trial (rep=0, index=3): {'TrialType': 'Mem', 'Lag': 99, 'Image': 'spoon01.jpg', 'T1PA': 'Z', 'T2PA': 'Z', 'PicFolder': 'JPG\\', 'Picture': 'spoon01', 'FullPathName': 'C:\\\\Users\\\\Psychology\\\\Documents\\\\ABExperiment\\\\MemoryStudy\\\\resources\\\\JPG\\\\spoon01.jpg', 'FilePath': 'C:\\\\Users\\\\Psychology\\\\Documents\\\\ABExperiment\\\\MemoryStudy\\\\resources\\\\JPG\\\\'}
+15.4727 	DATA 	Keypress: 1
+15.4825 	EXP 	MemTest: autoDraw = False
+15.4825 	EXP 	Display: autoDraw = False
+15.4825 	EXP 	Display: image = 'C:\\\\Users\\\\Psychology\\\\Documents\\\\ABExperiment\\\\MemoryStudy\\\\resources\\\\JPG\\\\spoon01.jpg'
+15.4825 	EXP 	MemTest: autoDraw = True
+15.4825 	EXP 	Display: autoDraw = True
+16.1534 	EXP 	New trial (rep=0, index=4): {'TrialType': 'Mem', 'Lag': 99, 'Image': 'tower.jpg', 'T1PA': 'Z', 'T2PA': 'Z', 'PicFolder': 'JPG\\', 'Picture': 'tower', 'FullPathName': 'C:\\\\Users\\\\Psychology\\\\Documents\\\\ABExperiment\\\\MemoryStudy\\\\resources\\\\JPG\\\\tower.jpg', 'FilePath': 'C:\\\\Users\\\\Psychology\\\\Documents\\\\ABExperiment\\\\MemoryStudy\\\\resources\\\\JPG\\\\'}
+16.2412 	DATA 	Keypress: 1
+16.2508 	EXP 	MemTest: autoDraw = False
+16.2508 	EXP 	Display: autoDraw = False
+16.2508 	EXP 	Display: image = 'C:\\\\Users\\\\Psychology\\\\Documents\\\\ABExperiment\\\\MemoryStudy\\\\resources\\\\JPG\\\\tower.jpg'
+16.2508 	EXP 	MemTest: autoDraw = True
+16.2508 	EXP 	Display: autoDraw = True
+16.9377 	EXP 	New trial (rep=0, index=5): {'TrialType': 'Mem', 'Lag': 1, 'Image': 'bull.jpg', 'T1PA': 'P', 'T2PA': 'P', 'PicFolder': 'JPG\\', 'Picture': 'bull', 'FullPathName': 'C:\\\\Users\\\\Psychology\\\\Documents\\\\ABExperiment\\\\MemoryStudy\\\\resources\\\\JPG\\\\bull.jpg', 'FilePath': 'C:\\\\Users\\\\Psychology\\\\Documents\\\\ABExperiment\\\\MemoryStudy\\\\resources\\\\JPG\\\\'}
+16.9499 	DATA 	Keypress: 1
+16.9574 	EXP 	MemTest: autoDraw = False
+16.9574 	EXP 	Display: autoDraw = False
+16.9574 	EXP 	Display: image = 'C:\\\\Users\\\\Psychology\\\\Documents\\\\ABExperiment\\\\MemoryStudy\\\\resources\\\\JPG\\\\bull.jpg'
+16.9574 	EXP 	MemTest: autoDraw = True
+16.9574 	EXP 	Display: autoDraw = True
+17.5381 	EXP 	New trial (rep=0, index=6): {'TrialType': 'Mem', 'Lag': 1, 'Image': 'asianelephant.jpg', 'T1PA': 'P', 'T2PA': 'P', 'PicFolder': 'JPG\\', 'Picture': 'asianelephant', 'FullPathName': 'C:\\\\Users\\\\Psychology\\\\Documents\\\\ABExperiment\\\\MemoryStudy\\\\resources\\\\JPG\\\\asianelephant.jpg', 'FilePath': 'C:\\\\Users\\\\Psychology\\\\Documents\\\\ABExperiment\\\\MemoryStudy\\\\resources\\\\JPG\\\\'}
+17.5411 	DEPRECATION 	Couldn't find image C:\\Users\\Psychology\\Documents\\ABExperiment\\MemoryStudy\\resources\\JPG\\asianelephant.jpg; check path? (tried: C:\Users\Psychology\Documents\ABExperiment\MemoryStudy\resources\JPG\asianelephant.jpg)
+17.6753 	EXP 	window1: mouseVisible = True

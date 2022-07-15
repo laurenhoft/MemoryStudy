@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2022.1.4),
-    on June 20, 2022, at 15:22
+    on June 22, 2022, at 12:04
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -95,9 +95,9 @@ defaultKeyboard = keyboard.Keyboard(backend='iohub')
 # Initialize components for Routine "Mem_Instructions"
 Mem_InstructionsClock = core.Clock()
 text = visual.TextStim(win=win, name='text',
-    text='Memory test instructions',
+    text='You will now be presented with a string of images. \n\nFor each image, you must identify whether you think it was previously presented to you in the experiment, or if it was not.\n\nUse the numbers 1-6 on your keyboard to indicate how confident you are that the image on screen has been presented to you already, on a scale of 1 (not at all confident) to 6 (very confident).\n\nPress the space bar to begin',
     font='Open Sans',
-    pos=(0, 0), height=0.05, wrapWidth=None, ori=0.0, 
+    pos=(0, 0), height=0.03, wrapWidth=None, ori=0.0, 
     color='white', colorSpace='rgb', opacity=None, 
     languageStyle='LTR',
     depth=0.0);
@@ -106,9 +106,9 @@ End_Instructions = keyboard.Keyboard()
 # Initialize components for Routine "MemoryTest"
 MemoryTestClock = core.Clock()
 MemTest = visual.TextStim(win=win, name='MemTest',
-    text='Did you see this image?',
+    text='How confident are you that you saw this image?',
     font='Open Sans',
-    pos=(0, 0), height=0.05, wrapWidth=None, ori=0.0, 
+    pos=(0, -0.2), height=0.05, wrapWidth=None, ori=0.0, 
     color='white', colorSpace='rgb', opacity=None, 
     languageStyle='LTR',
     depth=0.0);
@@ -117,10 +117,17 @@ Display = visual.ImageStim(
     win=win,
     name='Display', 
     image='sin', mask=None, anchor='center',
-    ori=0.0, pos=(0, 0), size=(0.5, 0.5),
+    ori=0.0, pos=(0, 0.15), size=(0.5, 0.5),
     color=[1,1,1], colorSpace='rgb', opacity=None,
     flipHoriz=False, flipVert=False,
     texRes=128.0, interpolate=True, depth=-2.0)
+text_2 = visual.TextStim(win=win, name='text_2',
+    text='Not at all   1__2__3__4__5__6   Very',
+    font='Open Sans',
+    pos=(0, -0.35), height=0.05, wrapWidth=None, ori=0.0, 
+    color='white', colorSpace='rgb', opacity=None, 
+    languageStyle='LTR',
+    depth=-3.0);
 
 # Create some handy timers
 globalClock = core.Clock()  # to track the time since experiment started
@@ -257,7 +264,7 @@ for thisTrial in trials:
     _MemResponse_allKeys = []
     Display.setImage(FullPathName)
     # keep track of which components have finished
-    MemoryTestComponents = [MemTest, MemResponse, Display]
+    MemoryTestComponents = [MemTest, MemResponse, Display, text_2]
     for thisComponent in MemoryTestComponents:
         thisComponent.tStart = None
         thisComponent.tStop = None
@@ -311,7 +318,7 @@ for thisTrial in trials:
             win.callOnFlip(MemResponse.clock.reset)  # t=0 on next screen flip
             win.callOnFlip(MemResponse.clearEvents, eventType='keyboard')  # clear events on next screen flip
         if MemResponse.status == STARTED and not waitOnFlip:
-            theseKeys = MemResponse.getKeys(keyList=['1','2','3','4','5','6','7'], waitRelease=False)
+            theseKeys = MemResponse.getKeys(keyList=['1','2','3','4','5','6'], waitRelease=False)
             _MemResponse_allKeys.extend(theseKeys)
             if len(_MemResponse_allKeys):
                 MemResponse.keys = _MemResponse_allKeys[-1].name  # just the last key pressed
@@ -335,6 +342,23 @@ for thisTrial in trials:
                 Display.frameNStop = frameN  # exact frame index
                 win.timeOnFlip(Display, 'tStopRefresh')  # time at next scr refresh
                 Display.setAutoDraw(False)
+        
+        # *text_2* updates
+        if text_2.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            text_2.frameNStart = frameN  # exact frame index
+            text_2.tStart = t  # local t and not account for scr refresh
+            text_2.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(text_2, 'tStartRefresh')  # time at next scr refresh
+            text_2.setAutoDraw(True)
+        if text_2.status == STARTED:
+            # is it time to stop? (based on global clock, using actual start)
+            if tThisFlipGlobal > text_2.tStartRefresh + 10000-frameTolerance:
+                # keep track of stop time/frame for later
+                text_2.tStop = t  # not accounting for scr refresh
+                text_2.frameNStop = frameN  # exact frame index
+                win.timeOnFlip(text_2, 'tStopRefresh')  # time at next scr refresh
+                text_2.setAutoDraw(False)
         
         # check for quit (typically the Esc key)
         if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
@@ -369,6 +393,8 @@ for thisTrial in trials:
     trials.addData('MemResponse.stopped', MemResponse.tStopRefresh)
     trials.addData('Display.started', Display.tStartRefresh)
     trials.addData('Display.stopped', Display.tStopRefresh)
+    trials.addData('text_2.started', text_2.tStartRefresh)
+    trials.addData('text_2.stopped', text_2.tStopRefresh)
     # the Routine "MemoryTest" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset()
     thisExp.nextEntry()
